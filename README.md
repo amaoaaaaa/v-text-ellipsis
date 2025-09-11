@@ -60,6 +60,16 @@ app.directive("text-ellipsis", vTextEllipsis);
 app.mount("#app");
 ```
 
+### 3. 在组件内部注册指令
+
+setup 语法糖，导入直接就能在 `template` 中用
+
+```ts
+<script lang="ts" setup>
+import { vTextEllipsis } from "@amaoaaaaa/v-text-ellipsis";
+</script>
+```
+
 ---
 
 ## 指令参数
