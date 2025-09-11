@@ -1,0 +1,37 @@
+{
+    "name": "@amaoaaaaa/v-text-ellipsis",
+    "version": "0.1.0",
+    "description": "Vue 3 指令，文本溢出省略号并支持 GSAP 滚动显示全文",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "publish!": "npm publish --access public",
+        "publish!:patch": "npm run build && npm version patch && npm run publish!",
+        "publish!:minor": "npm run build && npm version minor && npm run publish!",
+        "publish!:major": "npm run build && npm version major && npm run publish!"
+    },
+    "keywords": [
+        "vue3",
+        "directive",
+        "text-ellipsis"
+    ],
+    "author": "amaoaaaaa",
+    "license": "MIT",
+    "peerDependencies": {
+        "vue": "^3.0.0",
+        "gsap": "^3.0.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/amaoaaaaa/v-text-ellipsis"
+    },
+    "bugs": {
+        "url": "https://github.com/amaoaaaaa/v-text-ellipsis/issues"
+    },
+    "homepage": "https://github.com/amaoaaaaa/v-text-ellipsis"
+}
