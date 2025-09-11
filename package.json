@@ -1,6 +1,6 @@
 {
     "name": "@amaoaaaaa/v-text-ellipsis",
-    "version": "0.2.0",
+    "version": "0.2.1",
     "description": "Vue 3 指令，文本溢出省略号并支持 GSAP 滚动显示全文",
     "main": "dist/index.js",
     "module": "dist/index.js",
