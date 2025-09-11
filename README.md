@@ -53,10 +53,10 @@ app.mount("#app");
 ```ts
 import { createApp } from "vue";
 import App from "./App.vue";
-import { textEllipsis } from "@amaoaaaaa/v-text-ellipsis";
+import { vTextEllipsis } from "@amaoaaaaa/v-text-ellipsis";
 
 const app = createApp(App);
-app.directive("text-ellipsis", textEllipsis);
+app.directive("text-ellipsis", vTextEllipsis);
 app.mount("#app");
 ```
 
@@ -78,7 +78,7 @@ app.mount("#app");
 ```ts
 // types/vue-shim.d.ts
 import 'vue';
-import { textEllipsis } from "@amaoaaaaa/v-text-ellipsis";
+import { vTextEllipsis } from "@amaoaaaaa/v-text-ellipsis";
 
 declare module '@vue/runtime-core' {
     export interface ComponentCustomProperties {
@@ -86,7 +86,7 @@ declare module '@vue/runtime-core' {
          * 自定义指令：v-text-ellipsis
          * @description 给元素添加文本溢出显示省略号，鼠标移入时内容滚动的效果
          */
-        vTextEllipsis: typeof textEllipsis; 
+        vTextEllipsis: typeof vTextEllipsis; 
     }
 }
 ```
