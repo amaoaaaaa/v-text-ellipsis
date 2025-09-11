@@ -1,5 +1,5 @@
 import { App } from "vue";
-import vTextEllipsis from "./textEllipsis";
+import vTextEllipsis from "./vTextEllipsis";
 
 function install(app: App) {
     app.directive("text-ellipsis", vTextEllipsis);
